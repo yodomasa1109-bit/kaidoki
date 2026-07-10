@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yodomasa1109-bit.github.io/kaidoki/sitemap.xml
