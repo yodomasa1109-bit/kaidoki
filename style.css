@@ -307,6 +307,79 @@ a {
 }
 
 /* ---------------------------------------------------------------------
+   モール横断(楽天 vs Yahoo!ショッピング) 価格比較ボックス
+--------------------------------------------------------------------- */
+
+.cross-mall-box {
+  background-color: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 32px;
+}
+
+.cross-mall-box h2 {
+  font-size: 1.2rem;
+  margin: 0 0 16px;
+  border-left: 4px solid var(--accent);
+  padding-left: 10px;
+}
+
+.cross-mall-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cross-mall-table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #e5e5e5;
+  vertical-align: middle;
+}
+
+.cross-mall-name {
+  font-weight: bold;
+}
+
+.cross-mall-price {
+  color: var(--accent);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.cross-mall-link a {
+  display: inline-block;
+  background-color: var(--accent);
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.cross-mall-link a:hover {
+  background-color: var(--accent-hover);
+}
+
+.cross-mall-cheapest {
+  display: inline-block;
+  background-color: var(--accent);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.cross-mall-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 16px 0 0;
+}
+
+/* ---------------------------------------------------------------------
    CTAボタン
 --------------------------------------------------------------------- */
 
@@ -424,5 +497,24 @@ a {
 
   .product-box .cta {
     text-align: center;
+  }
+
+  .cross-mall-table,
+  .cross-mall-table tbody {
+    display: block;
+    width: 100%;
+  }
+
+  .cross-mall-row {
+    display: block;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .cross-mall-table td {
+    display: block;
+    border-bottom: none;
+    padding: 4px 0;
   }
 }
