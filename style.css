@@ -172,6 +172,46 @@ a {
 }
 
 /* ---------------------------------------------------------------------
+   トップページ セクション(本日の記事 / ジャンル別)
+--------------------------------------------------------------------- */
+
+.today-section,
+.genre-section {
+  margin-bottom: 40px;
+}
+
+.today-section:last-child,
+.genre-section:last-child {
+  margin-bottom: 0;
+}
+
+.today-section h2,
+.genre-section h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 16px;
+  padding-left: 12px;
+  border-left: 4px solid var(--accent);
+}
+
+/* 本日セクションは視覚的に強調する(背景色+アクセントカラーの見出し)。 */
+.today-section {
+  background-color: #fff5f5;
+  border: 1px solid #f2cccc;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.today-section h2 {
+  color: var(--accent);
+  font-size: 1.35rem;
+}
+
+.genre-section h2 {
+  color: var(--text);
+}
+
+/* ---------------------------------------------------------------------
    記事ページ
 --------------------------------------------------------------------- */
 
@@ -474,6 +514,24 @@ a {
 
   .card-list {
     grid-template-columns: 1fr;
+  }
+
+  .today-section,
+  .genre-section {
+    margin-bottom: 28px;
+  }
+
+  .today-section {
+    padding: 14px;
+  }
+
+  .today-section h2,
+  .genre-section h2 {
+    font-size: 1.05rem;
+  }
+
+  .today-section h2 {
+    font-size: 1.15rem;
   }
 
   .article h1 {
